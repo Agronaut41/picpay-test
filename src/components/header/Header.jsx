@@ -2,8 +2,6 @@ import Logo from '../../assets/images/logo.svg';
 import { StyledHeader } from './style';
 
 export const Header = () => {
-    const date = getFormattedDate();
-    const currentTime = getCurrentTime();
 
     function getFormattedDate() {
         const months = [
@@ -27,8 +25,8 @@ export const Header = () => {
         return `${hours}:${minutes.toString().padStart(2, '0')}`;
     }
     
-    console.log(getCurrentTime());
-    
+    const date = getFormattedDate();
+    const currentTime = getCurrentTime();
     
     return (
         <StyledHeader>

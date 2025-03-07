@@ -39,4 +39,14 @@ export const StyledHeader = styled.header`
         }
     }
 
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+
+        .header {
+            &-logo {
+                margin-bottom: 3rem;
+            }
+        }
+    }
 `
